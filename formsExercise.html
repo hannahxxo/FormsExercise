@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+
+<body>
+    <h1>Customer Experience Survey</h1>
+
+    <form>
+<label for="storeID">Store Number</label>
+    <select id="storeID">
+    <option value="">3109</option>
+    <option value="">2421</option>
+    <option value="">5357</option>
+</select>
+
+<fieldset>
+    <legend>When you visited:</legend>
+    <label>
+        Date Visitd:
+        <input type="date" value="" max="2021-12-31" min="2021-01-01">
+    </label>
+    
+    <label>
+        Time Visitd:
+        <input type="time" value="">
+    </label>
+</fieldset>
+
+
+    <label>
+        First Name
+        <input type="text">
+    </label>
+    <label>
+        Last Name
+        <input type="text">
+    </label>
+    <br>
+    <label for="userEmail">Email</label>
+      <input type="email" id="userEmail" placeholder="your email">
+      <br>
+
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="radioLink">
+
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="radioLink" checked="checked">
+
+      <label for="other">Other</label>
+      <input type="radio" id="other" name="radioLink">
+      <br>
+
+      <label for="experience">Tell us about your experience:</label>
+      <br>
+    <textarea id="experience" cols="20" rows="2"></textarea>
+    <br>
+    <label>
+        Times visited in the last month:
+        <input type="number" value="" min="1" max="30">
+    </label>
+    <br>
+    <label for="">Please check the box if you would be willing to be contacted about your experience:</label>
+    <input type="checkbox" id="">
+    <br>
+<label>
+    Password
+    <input type="password" required title="5 to 10 characters">
+</label>
+    <br>
+
+    <input type="reset">
+    <button>Submit</button>
+
+  </form>
+
+</body>
+</html>
